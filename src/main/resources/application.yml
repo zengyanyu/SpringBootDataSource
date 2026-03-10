@@ -1,0 +1,35 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /
+
+spring:
+  # 数据源1（主数据源：业务库）
+  datasource:
+    primary:
+      jdbc-url: jdbc:postgresql://192.168.244.131:15432/test_sys?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai
+      username: postgres
+      password: pgsql!@#12569088ht
+      driver-class-name: org.postgresql.Driver
+    # 数据源2（从数据源：日志库）
+    secondary:
+#      jdbc-url: jdbc:mysql://localhost:3306/secondary_db?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+      jdbc-url: jdbc:postgresql://192.168.244.131:15432/test_sys?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai
+      username: postgres
+      password: pgsql!@#12569088ht
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+      driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+  application:
+    name: spring boot datasource
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+# MyBatis 配置（可选，根据持久层框架调整）
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: com.zengyanyu.*.entity
