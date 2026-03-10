@@ -1,7 +1,7 @@
 package com.zengyanyu.system.controller;
 
 import com.zengyanyu.system.entity.Userinfo;
-import com.zengyanyu.system.service.UserinfoService;
+import com.zengyanyu.system.service.IUserinfoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -22,7 +22,7 @@ import javax.annotation.Resource;
 public class UserinfoController {
 
     @Resource
-    private UserinfoService userinfoService;
+    private IUserinfoService userinfoService;
 
     @ApiOperation("保存")
     @PostMapping("/save")

@@ -1,15 +1,16 @@
-package com.zengyanyu.system.service;
+package com.zengyanyu.system.service.impl;
 
 import com.zengyanyu.system.entity.Log;
 import com.zengyanyu.system.entity.Userinfo;
 import com.zengyanyu.system.mapper.primary.UserinfoMapper;
 import com.zengyanyu.system.mapper.secondary.LogMapper;
+import com.zengyanyu.system.service.IUserinfoService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
 @Service
-public class UserinfoService {
+public class UserinfoServiceImpl implements IUserinfoService {
 
     // 自动关联主数据源
     @Resource
@@ -19,6 +20,7 @@ public class UserinfoService {
     @Resource
     private LogMapper logMapper;
 
+    @Override
     public void addUser(Userinfo userinfo) {
         // 操作主数据源
         userinfoMapper.insert(userinfo);
