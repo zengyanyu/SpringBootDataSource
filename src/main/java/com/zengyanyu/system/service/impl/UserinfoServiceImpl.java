@@ -8,6 +8,7 @@ import com.zengyanyu.system.service.IUserinfoService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import javax.transaction.Transactional;
 
 @Service
 public class UserinfoServiceImpl implements IUserinfoService {
@@ -20,6 +21,7 @@ public class UserinfoServiceImpl implements IUserinfoService {
     @Resource
     private LogMapper logMapper;
 
+    @Transactional
     @Override
     public void addUser(Userinfo userinfo) {
         // 操作主数据源
