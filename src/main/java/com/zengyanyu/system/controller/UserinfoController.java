@@ -27,7 +27,6 @@ public class UserinfoController {
     @ApiOperation("保存")
     @PostMapping("/save")
     public String save(@RequestBody Userinfo userinfo) {
-        userinfo.setId(1L);
         userinfoService.addUser(userinfo);
         return "保存成功";
     }
