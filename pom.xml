@@ -163,6 +163,10 @@
             <artifactId>json</artifactId>
             <version>20210307</version>
         </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+        </dependency>
         <!-- Hibernate 核心依赖 -->
         <dependency>
             <groupId>org.hibernate</groupId>
