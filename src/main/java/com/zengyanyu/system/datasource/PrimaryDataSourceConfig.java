@@ -51,7 +51,6 @@ public class PrimaryDataSourceConfig {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
         bean.setDataSource(dataSource);
 
-        // ========== 关键修复：指定 Mapper XML 文件路径 ==========
         // 路径需匹配你的 XML 文件实际位置（根据包名调整）
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         // 方式1：如果 XML 在 resources 下（推荐）
