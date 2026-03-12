@@ -6,4 +6,8 @@
         INSERT INTO userinfo(id, name)
         VALUES (#{id}, #{name})
     </insert>
+
+    <select id="listAll" resultType="com.zengyanyu.system.entity.Userinfo">
+        select * from userinfo
+    </select>
 </mapper>

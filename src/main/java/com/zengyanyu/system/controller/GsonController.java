@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
+/**
+ * @author zengyanyu
+ */
 @RestController
 @Api(tags = "Gson控制器")
 public class GsonController {
