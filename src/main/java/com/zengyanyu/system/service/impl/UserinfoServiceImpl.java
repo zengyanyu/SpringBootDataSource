@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import javax.transaction.Transactional;
+import java.util.List;
 
 @Service
 public class UserinfoServiceImpl implements IUserinfoService {
@@ -28,5 +29,10 @@ public class UserinfoServiceImpl implements IUserinfoService {
         userinfoMapper.insert(userinfo);
         // 操作从数据源
         logMapper.insert(new Log(userinfo.getId(), "新增用户"));
+    }
+
+    @Override
+    public List<Userinfo> queryUsers() {
+        return userinfoMapper.listAll();
     }
 }
