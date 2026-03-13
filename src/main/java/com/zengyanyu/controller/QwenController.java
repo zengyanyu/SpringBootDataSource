@@ -38,9 +38,9 @@ public class QwenController {
     public Map<String, String> chat(@RequestBody Map<String, String> request) {
         String message = request.get("message");
         String reply = qwenService.chat(message);
-        HashMap<String, String> stringStringHashMap = new HashMap<>();
-        stringStringHashMap.put("reply", reply);
-        return stringStringHashMap;
+        HashMap<String, String> hashmap = new HashMap<>();
+        hashmap.put("reply", reply);
+        return hashmap;
     }
 
     /**
@@ -53,8 +53,8 @@ public class QwenController {
     @PostMapping("/chat-history")
     public Map<String, String> chatWithHistory(@RequestBody List<QwenChatRequest.QwenMessage> messages) {
         String reply = qwenService.chatWithHistory(messages);
-        HashMap<String, String> stringStringHashMap = new HashMap<>();
-        stringStringHashMap.put("reply", reply);
-        return stringStringHashMap;
+        HashMap<String, String> hashmap = new HashMap<>();
+        hashmap.put("reply", reply);
+        return hashmap;
     }
 }
