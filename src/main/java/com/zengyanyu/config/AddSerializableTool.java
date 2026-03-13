@@ -8,6 +8,8 @@ import java.nio.file.Paths;
 import java.util.regex.Pattern;
 
 /**
+ * 给Dto或者Entity包中的类添加Serializable接口
+ *
  * @author zengyanyu
  */
 public class AddSerializableTool {
@@ -24,6 +26,12 @@ public class AddSerializableTool {
         scanDir(new File(rootDir + "entity"));
     }
 
+    /**
+     * 扫描目录
+     *
+     * @param dir 文件目录
+     * @throws IOException IO异常
+     */
     private static void scanDir(File dir) throws IOException {
         if (!dir.exists())
             return;
@@ -36,6 +44,10 @@ public class AddSerializableTool {
         }
     }
 
+    /**
+     * @param file 文件
+     * @throws IOException IO异常
+     */
     private static void processJavaFile(File file) throws IOException {
         // 读取文件内容
         String content = new String(Files.readAllBytes(Paths.get(file.getPath())));
