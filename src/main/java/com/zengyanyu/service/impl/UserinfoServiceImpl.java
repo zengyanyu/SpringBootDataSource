@@ -11,6 +11,9 @@ import javax.annotation.Resource;
 import javax.transaction.Transactional;
 import java.util.List;
 
+/**
+ * @author zengyanyu
+ */
 @Service
 public class UserinfoServiceImpl implements IUserinfoService {
 

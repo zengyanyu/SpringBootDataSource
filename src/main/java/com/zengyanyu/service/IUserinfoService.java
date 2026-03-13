@@ -4,6 +4,9 @@ import com.zengyanyu.entity.Userinfo;
 
 import java.util.List;
 
+/**
+ * @author zengyanyu
+ */
 public interface IUserinfoService {
 
     /**

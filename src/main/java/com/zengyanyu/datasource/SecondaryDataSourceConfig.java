@@ -17,6 +17,8 @@ import javax.sql.DataSource;
 /**
  * 从数据源配置（secondary）
  * 注意：不需要加 @Primary 注解
+ *
+ * @author zengyanyu
  */
 @Configuration
 @MapperScan(

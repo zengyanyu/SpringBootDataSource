@@ -19,6 +19,8 @@ import javax.sql.DataSource;
  * 主数据源配置（primary）
  * 1. @Primary 标记为主数据源（必须，否则会冲突）
  * 2. @MapperScan 指定该数据源扫描的 Mapper 包路径
+ *
+ * @author zengyanyu
  */
 @Configuration
 @MapperScan(

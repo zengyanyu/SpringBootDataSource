@@ -8,6 +8,7 @@ import java.io.IOException;
 
 /**
  * 缩略图测试接口
+ * @author zengyanyu
  */
 @RestController
 public class ThumbnailController {

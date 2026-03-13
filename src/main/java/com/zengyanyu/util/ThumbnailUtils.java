@@ -10,6 +10,8 @@ import java.io.OutputStream;
 
 /**
  * 缩略图生成工具类
+ *
+ * @author zengyanyu
  */
 public class ThumbnailUtils {
 

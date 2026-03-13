@@ -9,11 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author zengyanyu
  * 异常堆栈信息工具类
  * 基于 StackTraceElement 解析异常的详细信息
  * JDK 8 及以上版本（兼容所有主流 Java 版本）。
  * 无需额外依赖，纯 JDK 原生 API 实现
+ *
+ * @author zengyanyu
  */
 @Slf4j
 public class ExceptionStackUtil {

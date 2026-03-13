@@ -5,6 +5,9 @@ import lombok.Setter;
 
 import java.io.Serializable;
 
+/**
+ * @author zengyanyu
+ */
 @Getter
 @Setter
 public class PersonDto implements Serializable {

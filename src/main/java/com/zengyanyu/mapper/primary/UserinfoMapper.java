@@ -5,6 +5,9 @@ import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
+/**
+ * @author zengyanyu
+ */
 @Mapper
 public interface UserinfoMapper {
     void insert(Userinfo userinfo);
