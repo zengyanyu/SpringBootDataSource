@@ -17,7 +17,7 @@
     <name>Spring Boot DataSource</name>
     <description>Spring Boot Framework</description>
 
-    <!-- 打包格式 -->
+    <!-- 打包格式,默认为jar -->
     <packaging>jar</packaging>
 
     <properties>
@@ -31,6 +31,12 @@
         <easyexcel.version>3.3.2</easyexcel.version>
         <hutool.all.version>5.8.15</hutool.all.version>
         <mysql.version>8.0.31</mysql.version>
+        <mybatis.spring.boot.starter.version>2.3.0</mybatis.spring.boot.starter.version>
+        <druid.spring.boot.starter.version>1.1.21</druid.spring.boot.starter.version>
+        <mybatis.plus.generator.version>3.5.1</mybatis.plus.generator.version>
+        <mybatis.plus.boot.starter.version>3.5.3.1</mybatis.plus.boot.starter.version>
+        <velocity.engine.core.version>2.3</velocity.engine.core.version>
+        <springfox.swagger.version>2.9.2</springfox.swagger.version>
     </properties>
 
     <dependencies>
@@ -74,29 +80,29 @@
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.3.0</version>
+            <version>${mybatis.spring.boot.starter.version}</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
-            <version>1.1.21</version>
+            <version>${druid.spring.boot.starter.version}</version>
         </dependency>
 
         <!-- mybatis-plus代码生成器 -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-generator</artifactId>
-            <version>3.5.1</version>
+            <version>${mybatis.plus.generator.version}</version>
         </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.5.3.1</version>
+            <version>${mybatis.plus.boot.starter.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity-engine-core</artifactId>
-            <version>2.3</version>
+            <version>${velocity.engine.core.version}</version>
         </dependency>
 
         <dependency>
@@ -142,12 +148,12 @@
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
-            <version>2.9.2</version>
+            <version>${springfox.swagger.version}</version>
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
-            <version>2.9.2</version>
+            <version>${springfox.swagger.version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>io.swagger</groupId>
