@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import javax.transaction.Transactional;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -25,6 +26,9 @@ public class UserinfoServiceImpl implements IUserinfoService {
     @Resource
     private LogMapper logMapper;
 
+    /**
+     * @param userinfo
+     */
     @Transactional
     @Override
     public void addUser(Userinfo userinfo) {
@@ -34,6 +38,9 @@ public class UserinfoServiceImpl implements IUserinfoService {
         logMapper.insert(new Log(userinfo.getId(), "新增用户"));
     }
 
+    /**
+     * @return
+     */
     @Override
     public List<Userinfo> queryUsers() {
         return userinfoMapper.listAll();

@@ -10,7 +10,13 @@ import java.util.List;
  */
 @Mapper
 public interface UserinfoMapper {
+    /**
+     * @param userinfo
+     */
     void insert(Userinfo userinfo);
 
+    /**
+     * @return
+     */
     List<Userinfo> listAll();
 }
