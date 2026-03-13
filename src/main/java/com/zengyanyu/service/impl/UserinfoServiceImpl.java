@@ -1,10 +1,10 @@
-package com.zengyanyu.system.service.impl;
+package com.zengyanyu.service.impl;
 
-import com.zengyanyu.system.entity.Log;
-import com.zengyanyu.system.entity.Userinfo;
-import com.zengyanyu.system.mapper.primary.UserinfoMapper;
-import com.zengyanyu.system.mapper.secondary.LogMapper;
-import com.zengyanyu.system.service.IUserinfoService;
+import com.zengyanyu.entity.Log;
+import com.zengyanyu.mapper.primary.UserinfoMapper;
+import com.zengyanyu.mapper.secondary.LogMapper;
+import com.zengyanyu.entity.Userinfo;
+import com.zengyanyu.service.IUserinfoService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

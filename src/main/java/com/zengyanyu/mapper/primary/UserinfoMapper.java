@@ -1,6 +1,6 @@
-package com.zengyanyu.system.mapper.primary;
+package com.zengyanyu.mapper.primary;
 
-import com.zengyanyu.system.entity.Userinfo;
+import com.zengyanyu.entity.Userinfo;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

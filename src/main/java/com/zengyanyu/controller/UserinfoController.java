@@ -1,8 +1,8 @@
-package com.zengyanyu.system.controller;
+package com.zengyanyu.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.zengyanyu.system.entity.Userinfo;
-import com.zengyanyu.system.service.IUserinfoService;
+import com.zengyanyu.entity.Userinfo;
+import com.zengyanyu.service.IUserinfoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;

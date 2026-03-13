@@ -1,4 +1,4 @@
-package com.zengyanyu.system.entity;
+package com.zengyanyu.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;
@@ -15,14 +15,15 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@TableName("userinfo")
-public class Userinfo implements Serializable {
+@TableName("log")
+public class Log implements Serializable {
 
     @Id
     @Column(name = "id", columnDefinition = "int8 NOT NULL")
     @GeneratedValue(generator = "idGenerator", strategy = GenerationType.SEQUENCE)
-    @GenericGenerator(name = "idGenerator", strategy = "com.zengyanyu.system.util.SnowflakeIdUtils")
+    @GenericGenerator(name = "idGenerator", strategy = "com.zengyanyu.util.SnowflakeIdUtils")
     private Long id;
 
     private String name;
+
 }

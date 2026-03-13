@@ -1,4 +1,4 @@
-package com.zengyanyu.system.dto;
+package com.zengyanyu.dto;
 
 import lombok.Getter;
 import lombok.Setter;

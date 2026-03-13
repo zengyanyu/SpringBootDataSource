@@ -3,7 +3,7 @@
  * 自定义License声明
  * ZENGYANYU PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
  */
-package com.zengyanyu.system.config;
+package com.zengyanyu.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package com.zengyanyu.system.util;
+package com.zengyanyu.util;
 
 import net.coobird.thumbnailator.Thumbnails;
 import net.coobird.thumbnailator.geometry.Positions;

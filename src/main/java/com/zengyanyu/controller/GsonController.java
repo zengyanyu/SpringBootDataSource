@@ -1,4 +1,4 @@
-package com.zengyanyu.system.controller;
+package com.zengyanyu.controller;
 
 import com.google.gson.Gson;
 import io.swagger.annotations.Api;

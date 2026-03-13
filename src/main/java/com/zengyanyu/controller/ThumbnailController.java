@@ -1,6 +1,6 @@
-package com.zengyanyu.system.controller;
+package com.zengyanyu.controller;
 
-import com.zengyanyu.system.util.ThumbnailUtils;
+import com.zengyanyu.util.ThumbnailUtils;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.File;

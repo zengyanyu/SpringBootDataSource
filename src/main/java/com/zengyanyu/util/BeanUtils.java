@@ -1,6 +1,6 @@
-package com.zengyanyu.system.util;
+package com.zengyanyu.util;
 
-import com.zengyanyu.system.dto.UserDto;
+import com.zengyanyu.dto.UserDto;
 
 import java.beans.BeanInfo;
 import java.beans.Introspector;

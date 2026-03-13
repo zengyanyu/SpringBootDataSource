@@ -1,6 +1,6 @@
-package com.zengyanyu.system.mapper.secondary;
+package com.zengyanyu.mapper.secondary;
 
-import com.zengyanyu.system.entity.Log;
+import com.zengyanyu.entity.Log;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

@@ -1,6 +1,6 @@
-package com.zengyanyu.system.service;
+package com.zengyanyu.service;
 
-import com.zengyanyu.system.entity.Userinfo;
+import com.zengyanyu.entity.Userinfo;
 
 import java.util.List;
 
