@@ -49,6 +49,7 @@ public class QwenController {
      * @param messages 消息列表（包含 role 和 content）
      * @return AI 回复
      */
+    @ApiOperation("多轮对话接口（支持历史记录）")
     @PostMapping("/chat-history")
     public Map<String, String> chatWithHistory(@RequestBody List<QwenChatRequest.QwenMessage> messages) {
         String reply = qwenService.chatWithHistory(messages);
