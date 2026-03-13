@@ -20,35 +20,6 @@ spring:
       # driver-class-name: com.mysql.cj.jdbc.Driver
       driver-class-name: org.postgresql.Driver
 
-  jpa:
-    hibernate:
-      ddl-auto: update
-  application:
-    name: spring boot datasource
-  mvc:
-    pathmatch:
-      matching-strategy: ant_path_matcher
-
-# MyBatis 配置（可选，根据持久层框架调整）
-mybatis:
-  mapper-locations: classpath:mapper/**/*.xml
-  type-aliases-package: com.zengyanyu.*.entity
-
 logging:
   level:
     org.apache.ibatis: debug
-
-# 通义千问配置
-ai:
-  qwen:
-#    https://bailian.console.aliyun.com/cn-beijing/?tab=model#/api-key
-    # 替换为你的阿里云 API-KEY
-    api-key: sk-082fa6f86d6a43f6bb8cbe38f31ab043
-    # 通义千问接口地址（固定）
-    base-url: https://dashscope.aliyuncs.com/api/v1
-    # 默认模型（通义千问标准版）
-    model: qwen-turbo
-    # 超时时间（毫秒）
-    timeout: 30000
-    # 响应格式（文本）
-    result-format: text
