@@ -11,10 +11,10 @@ import java.net.InetAddress;
 
 @Slf4j
 @SpringBootApplication
-public class SpringBootDataSourceApplication {
+public class DataSourceConfigApplication {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext ioc = SpringApplication.run(SpringBootDataSourceApplication.class, args);
+        ConfigurableApplicationContext ioc = SpringApplication.run(DataSourceConfigApplication.class, args);
 
         ConfigurableEnvironment env = ioc.getEnvironment();
         logApplicationStartup(env);
