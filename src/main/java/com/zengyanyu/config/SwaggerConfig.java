@@ -32,7 +32,7 @@ public class SwaggerConfig {
                 .groupName("所有API").pathMapping("/")
                 .select()
                 // API基础扫描路径
-                .apis(RequestHandlerSelectors.basePackage("com.zengyanyu.system"))
+                .apis(RequestHandlerSelectors.basePackage("com.zengyanyu"))
                 .paths(PathSelectors.any())
                 .build();
     }
