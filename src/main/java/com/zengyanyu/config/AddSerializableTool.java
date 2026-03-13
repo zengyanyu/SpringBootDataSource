@@ -11,6 +11,7 @@ import java.util.regex.Pattern;
  * @author zengyanyu
  */
 public class AddSerializableTool {
+
     // 目标包路径（替换为你的实际路径）
     private static final Pattern CLASS_PATTERN = Pattern.compile("public class (\\w+)\\s*\\{");
     private static final Pattern SERIALIZABLE_PATTERN = Pattern.compile("implements.*Serializable");
@@ -24,7 +25,8 @@ public class AddSerializableTool {
     }
 
     private static void scanDir(File dir) throws IOException {
-        if (!dir.exists()) return;
+        if (!dir.exists())
+            return;
         for (File file : dir.listFiles()) {
             if (file.isDirectory()) {
                 scanDir(file);
