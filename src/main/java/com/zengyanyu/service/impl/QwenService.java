@@ -12,6 +12,8 @@ import java.util.List;
 
 /**
  * 通义千问服务类（封装 API 调用逻辑）
+ *
+ * @author zengyanyu
  */
 @Service
 public class QwenService {

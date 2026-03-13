@@ -11,6 +11,8 @@ import java.time.Duration;
 
 /**
  * 通义千问配置类
+ *
+ * @author zengyanyu
  */
 @Configuration
 public class QwenConfig {

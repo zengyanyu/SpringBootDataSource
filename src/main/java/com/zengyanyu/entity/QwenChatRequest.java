@@ -6,6 +6,8 @@ import java.util.List;
 
 /**
  * 通义千问聊天请求实体
+ *
+ * @author zengyanyu
  */
 @Data
 public class QwenChatRequest {

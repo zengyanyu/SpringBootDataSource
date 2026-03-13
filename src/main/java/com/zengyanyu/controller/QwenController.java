@@ -16,6 +16,8 @@ import java.util.Map;
 
 /**
  * 通义千问接口控制器
+ *
+ * @author zengyanyu
  */
 @Api(tags = "通义千问聊天控制器对象")
 @RestController
