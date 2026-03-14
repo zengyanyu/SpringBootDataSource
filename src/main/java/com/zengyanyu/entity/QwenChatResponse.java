@@ -2,6 +2,7 @@ package com.zengyanyu.entity;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -10,7 +11,7 @@ import java.util.List;
  * @author zengyanyu
  */
 @Data
-public class QwenChatResponse {
+public class QwenChatResponse implements Serializable {
     // 响应ID
     private String request_id;
     // 响应输出
