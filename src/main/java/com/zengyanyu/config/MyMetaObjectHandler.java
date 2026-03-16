@@ -7,6 +7,8 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 
 /**
+ * 系统元数据对象处理对象，实现字段值自动填充
+ *
  * @author zengyanyu
  */
 @Component
