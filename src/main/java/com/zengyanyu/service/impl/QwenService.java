@@ -41,7 +41,7 @@ public class QwenService {
         // 1. 构建请求参数
         QwenChatRequest request = new QwenChatRequest();
         request.setModel(defaultModel);
-        request.setResult_format(resultFormat);
+        request.setResultFormat(resultFormat);
         // 添加用户消息（role 固定为 user）
         QwenChatRequest.Input input = new QwenChatRequest.Input();
         input.setMessages(Collections.singletonList(
@@ -87,7 +87,7 @@ public class QwenService {
     public String chatWithHistory(List<QwenChatRequest.QwenMessage> messages) {
         QwenChatRequest request = new QwenChatRequest();
         request.setModel(defaultModel);
-        request.setResult_format(resultFormat);
+        request.setResultFormat(resultFormat);
         QwenChatRequest.Input input = new QwenChatRequest.Input();
         input.setMessages(messages);
         request.setInput(input);

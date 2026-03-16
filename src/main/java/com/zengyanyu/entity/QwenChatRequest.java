@@ -19,11 +19,11 @@ public class QwenChatRequest implements Serializable {
     private Input input;
 
     // 响应格式（text/json）
-    private String result_format;
+    private String resultFormat;
     // 温度（0-1，值越高越随机）
     private Double temperature = 0.7;
     // 最大生成长度
-    private Integer max_tokens = 1024;
+    private Integer maxTokens = 1024;
 
     @Data
     public static class Input {
