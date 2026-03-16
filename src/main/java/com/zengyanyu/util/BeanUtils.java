@@ -17,14 +17,6 @@ public class BeanUtils {
     private BeanUtils() {
     }
 
-    public static void main(String[] args) throws Exception {
-        UserDto userDto = new UserDto();
-        userDto.setUsername("Neld");
-        userDto.setName("Stef");
-        Map<String, Object> bean = getBean(userDto);
-        System.out.println("bean = " + bean);
-    }
-
     /**
      * javaBean转换成Map
      *
@@ -32,7 +24,7 @@ public class BeanUtils {
      * @return
      * @throws Exception
      */
-    public static Map<String, Object> getBean(Object obj) throws Exception {
+    public static Map<String, Object> bean2map(Object obj) throws Exception {
         Map<String, Object> map = new HashMap<>();
         // 获取javaBean属性描述的包装对象
         BeanInfo beanInfo = Introspector.getBeanInfo(obj.getClass(), Object.class);
@@ -70,6 +62,14 @@ public class BeanUtils {
             setMethod.invoke(obj, map.get(name));
         }
         return obj;
+    }
+
+    public static void main(String[] args) throws Exception {
+        UserDto userDto = new UserDto();
+        userDto.setUsername("Will");
+        userDto.setName("Stef");
+        Map<String, Object> bean = bean2map(userDto);
+        System.out.println("bean = " + bean);
     }
 
 }
