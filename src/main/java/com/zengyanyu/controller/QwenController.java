@@ -1,6 +1,6 @@
 package com.zengyanyu.controller;
 
-import com.zengyanyu.entity.QwenChatRequest;
+import com.zengyanyu.dto.QwenChatRequest;
 import com.zengyanyu.service.impl.QwenService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

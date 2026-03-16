@@ -1,4 +1,4 @@
-package com.zengyanyu.entity;
+package com.zengyanyu.dto;
 
 import lombok.Data;
 

@@ -1,7 +1,7 @@
 package com.zengyanyu.service.impl;
 
-import com.zengyanyu.entity.QwenChatRequest;
-import com.zengyanyu.entity.QwenChatResponse;
+import com.zengyanyu.dto.QwenChatRequest;
+import com.zengyanyu.dto.QwenChatResponse;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
