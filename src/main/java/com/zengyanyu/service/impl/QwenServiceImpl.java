@@ -2,6 +2,7 @@ package com.zengyanyu.service.impl;
 
 import com.zengyanyu.dto.QwenChatRequest;
 import com.zengyanyu.dto.QwenChatResponse;
+import com.zengyanyu.service.IQwenService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -16,7 +17,7 @@ import java.util.List;
  * @author zengyanyu
  */
 @Service
-public class QwenService {
+public class QwenServiceImpl implements IQwenService {
 
     private final WebClient qwenWebClient;
 
@@ -27,7 +28,7 @@ public class QwenService {
     private String resultFormat;
 
     // 构造注入 WebClient
-    public QwenService(WebClient qwenWebClient) {
+    public QwenServiceImpl(WebClient qwenWebClient) {
         this.qwenWebClient = qwenWebClient;
     }
 
@@ -37,6 +38,7 @@ public class QwenService {
      * @param userMessage 用户输入的问题
      * @return AI 回复内容
      */
+    @Override
     public String chat(String userMessage) {
         // 1. 构建请求参数
         QwenChatRequest request = new QwenChatRequest();
@@ -84,6 +86,7 @@ public class QwenService {
      * @param messages 对话消息列表（包含历史记录）
      * @return AI 回复内容
      */
+    @Override
     public String chatWithHistory(List<QwenChatRequest.QwenMessage> messages) {
         QwenChatRequest request = new QwenChatRequest();
         request.setModel(defaultModel);

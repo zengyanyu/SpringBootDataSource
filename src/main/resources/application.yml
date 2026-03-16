@@ -9,6 +9,8 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+  main:
+    banner-mode: off
 
 # MyBatis 配置（可选，根据持久层框架调整）
 mybatis:
