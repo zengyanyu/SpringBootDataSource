@@ -1,7 +1,7 @@
 package com.zengyanyu.controller;
 
-import com.zengyanyu.entity.QwenChatRequest;
-import com.zengyanyu.service.impl.QwenService;
+import com.zengyanyu.service.IQwenService;
+import com.zengyanyu.dto.QwenChatRequest;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -25,7 +25,7 @@ import java.util.Map;
 public class QwenController {
 
     @Resource
-    private QwenService qwenService;
+    private IQwenService qwenService;
 
     /**
      * 简单聊天接口（单轮对话）
