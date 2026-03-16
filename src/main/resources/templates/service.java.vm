@@ -1,0 +1,23 @@
+package ${package.Service};
+
+import ${package.Entity}.${entity};
+import ${superServiceClassPackage};
+import com.zengyanyu.system.commons.ResponseData;
+
+/**
+ * $!{table.comment} 服务类
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+public interface ${table.serviceName} extends ${superServiceClass}<${entity}> {
+
+    /**
+     * 保存或更新$!{table.comment}
+     *
+     * @param ${table.entityPath} $!{table.comment}
+     * @return
+     */
+    ResponseData saveOrUpdate${entity}(${entity} ${table.entityPath});
+
+}
