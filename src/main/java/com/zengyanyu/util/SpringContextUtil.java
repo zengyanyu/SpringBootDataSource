@@ -6,8 +6,11 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
+import java.util.Map;
+
 /**
  * Spring 上下文工具类（非 Spring 管理的类中获取 Bean/配置）
+ *
  * @author zengyanyu
  */
 @Component
@@ -49,6 +52,15 @@ public class SpringContextUtil implements ApplicationContextAware {
      */
     public static <T> T getBean(Class<T> clazz) {
         return applicationContext.getBean(clazz);
+    }
+
+    /**
+     * @param clazz
+     * @param <T>
+     * @return
+     */
+    public static <T> Map<String, T> getBeanOfType(Class<T> clazz) {
+        return applicationContext.getBeansOfType(clazz);
     }
 
     /**
