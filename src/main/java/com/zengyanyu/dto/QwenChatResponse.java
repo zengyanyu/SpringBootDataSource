@@ -1,6 +1,7 @@
 package com.zengyanyu.dto;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.List;
@@ -10,19 +11,19 @@ import java.util.List;
  *
  * @author zengyanyu
  */
-@Data
+@Getter
+@Setter
 public class QwenChatResponse implements Serializable {
     // 响应ID
     private String requestId;
     // 响应输出
     private Output output;
-    // 用量统计
-    private Usage usage;
 
     /**
      * 输出内容
      */
-    @Data
+    @Getter
+    @Setter
     public static class Output {
         // 文本响应
         private String text;
@@ -35,22 +36,11 @@ public class QwenChatResponse implements Serializable {
     /**
      * 选择项
      */
-    @Data
+    @Getter
+    @Setter
     public static class Choice {
         private String finishReason;
         private QwenChatRequest.QwenMessage message;
     }
 
-    /**
-     * 用量统计
-     */
-    @Data
-    public static class Usage {
-        // 输入令牌数
-        private Integer inputTokens;
-        // 输出令牌数
-        private Integer outputTokens;
-        // 总令牌数
-        private Integer totalTokens;
-    }
 }
