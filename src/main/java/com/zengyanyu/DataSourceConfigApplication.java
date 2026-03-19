@@ -28,7 +28,7 @@ public class DataSourceConfigApplication {
         String serverPort = env.getProperty("server.port");
         String contextPath = env.getProperty("server.servlet.context-path");
         if (StringUtils.isBlank(contextPath)) {
-            contextPath = "/doc.html";
+            contextPath = "doc.html";
         } else {
             contextPath = contextPath + "/doc.html";
         }
