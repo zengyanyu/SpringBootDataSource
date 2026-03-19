@@ -1,4 +1,4 @@
-package com.zengyanyu.config;
+package com.zengyanyu.framework.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
