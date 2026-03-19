@@ -8,6 +8,7 @@ import org.springframework.web.filter.CorsFilter;
 
 /**
  * 跨域配置（前后端分离必备）
+ *
  * @author zengyanyu
  */
 @Configuration

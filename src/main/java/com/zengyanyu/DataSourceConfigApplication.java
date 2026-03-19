@@ -26,7 +26,11 @@ public class DataSourceConfigApplication {
         String protocol = "http";
         String serverPort = env.getProperty("server.port");
         String contextPath = env.getProperty("server.servlet.context-path");
-        contextPath += "/doc.html";
+        if (contextPath.startsWith("/") && contextPath.length() == 1) {
+            contextPath += "doc.html";
+        } else {
+            contextPath += "/doc.html";
+        }
 
         String hostAddress = "localhost";
         try {
