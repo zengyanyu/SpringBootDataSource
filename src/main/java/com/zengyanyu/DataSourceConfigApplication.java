@@ -1,7 +1,6 @@
 package com.zengyanyu;
 
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -27,11 +26,8 @@ public class DataSourceConfigApplication {
         String protocol = "http";
         String serverPort = env.getProperty("server.port");
         String contextPath = env.getProperty("server.servlet.context-path");
-        if (StringUtils.isBlank(contextPath)) {
-            contextPath = "doc.html";
-        } else {
-            contextPath = contextPath + "/doc.html";
-        }
+        contextPath += "/doc.html";
+
         String hostAddress = "localhost";
         try {
             hostAddress = InetAddress.getLocalHost().getHostAddress();
